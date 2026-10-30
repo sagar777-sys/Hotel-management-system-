@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+body { font-family: "Segoe UI", Arial, sans-serif; margin: 0; padding: 12px; color: #1f2937; background: #ffffff; }
+h2 { margin: 4px 0 14px; color: #0f3d5e; }
+h3 { margin: 22px 0 10px; color: #0f3d5e; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+.card { background: #f1f5f9; border-left: 5px solid #0f3d5e; border-radius: 10px; padding: 14px; }
+.card.green { border-color: #16a34a; } .card.red { border-color: #dc2626; }
+.card.blue { border-color: #2563eb; }  .card.gold { border-color: #d97706; }
+.card .lbl { font-size: 12px; text-transform: uppercase; color: #64748b; letter-spacing: .5px; }
+.card .val { font-size: 24px; font-weight: 700; margin-top: 4px; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { background: #0f3d5e; color: #fff; text-align: left; padding: 10px; white-space: nowrap; }
+td { padding: 9px 10px; border-bottom: 1px solid #e5e7eb; }
+tr:nth-child(even) td { background: #f8fafc; }
+.badge { padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.badge.available, .badge.checked-out { background: #dcfce7; color: #166534; }
+.badge.occupied, .badge.cancelled { background: #fee2e2; color: #991b1b; }
+.badge.booked { background: #dbeafe; color: #1e40af; }
+.badge.checked-in { background: #fef3c7; color: #92400e; }
+.empty { padding: 24px; text-align: center; color: #64748b; background: #f8fafc; border-radius: 10px; }
+.invoice { max-width: 720px; margin: 0 auto; border: 1px solid #e5e7eb; border-radius: 12px; padding: 24px; }
+.inv-head { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #0f3d5e; padding-bottom: 10px; }
+.inv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 18px 0; font-size: 14px; }
+.muted { color: #64748b; font-size: 12px; } .right { text-align: right; } .center { text-align: center; margin-top: 18px; }
+tr.grand td { font-weight: 700; font-size: 16px; background: #e0f2fe !important; }
+@media (max-width: 520px) { .inv-grid { grid-template-columns: 1fr; } }
